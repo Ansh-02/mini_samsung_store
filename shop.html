@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link href="stylesheet" rel="style.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="stylesheet" rel="style.css">
 
     <title>shop</title>
 </head>
+
 <body>
-  
+
+    <div class="container">
+        <div class="row">
+            <div class="continer my-4">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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"
+                            class="card-img-top"
+                            alt="Samsung 865 L SBS Star Inverter Frost Free Side by Side Refrigerator">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung 865 L SBS Star Inverter Frost Free Side by Side Refrigerator
+                            </h5>
+                            <p class="card-text">Digital Inverter Compressor
+                                Cool Select Technology
+                                LED Interior Light Spill Proof Shelf Type
+                                Environment Friendly Refrigerant R600a
+                                WIFI Embedded
+                                1 Year Manufacturer Warranty</p>
+                            <a href="https://www.samsung.com/in/refrigerators/side-by-side/rs8000cch-side-by-side-family-hub-635l-black-rs7hcg8543b1hl/"
+                                class="btn btn-primary">BUY NOW...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div> -->
+        </div>
+    </div>
 
 
 
@@ -20,8 +53,12 @@
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

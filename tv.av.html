@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link href="stylesheet" rel="style.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="stylesheet" rel="style.css">
 
-    <title></title>
+    <title> TV </title>
 </head>
+
 <body>
-  
+    <div class="container">
+        <div class="contenir my-4">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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"
+                            class="card-img-top" alt="crystal 4k uhd">
+                        <div class="card-body">
+                            <h5 class="card-title">crystal 4k uhd</h5>
+                            <p class="card-text">43 in, LED TV
+                                4K Resolution, 3840 x 2160 pixels
+                                Wifi
+                                Smart TV
+                                2 Speakers, 20 W Output
+                                Crystal Processor 4K Processor
+                                178 ° Viewing Angle
+                                3 HDMI Ports, 1 USB Ports</p>
+                            <a href="https://www.samsung.com/in/tvs/uhd-4k-tv/cue60--43-inch-ua43cue60aklxl/?cid=in_pd_ppc_google_ce-all-all-all-dtc_sales_samsung-allproducts-all-2023_eshop-pmax-pla_01jan2023-na_1ur-501359l-2023-eshop-bau-performancemax-cpc_pfm--16216012549------x--UA43CUE60AKLXL&gclid=Cj0KCQjwjt-oBhDKARIsABVRB0zaT2F4r0QxiHIs5JdBJ7OdzcsExMi0bSSFn0CTdnKLIiGv5aFPeGYaAoiuEALw_wcB"
+                                class="btn btn-primary">BUY NOW...</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div> -->
+            </div>
+        </div>
+    </div>
 
 
 
@@ -21,7 +53,12 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
